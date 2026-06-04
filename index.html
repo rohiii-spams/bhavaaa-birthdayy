@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Bhavaaa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bubbles"></div>
+
+<section id="p1" class="page active">
+  <h1 class="curve">Happiest Birthday Bhavaaaaaa 💗✨</h1>
+  <p class="tap">Tap to Proceed ✨</p>
+</section>
+
+<section id="p2" class="page">
+  <h2>Need a Present?? 🎁</h2>
+  <p>⚠️ Don't try pressing NO!</p>
+  <button onclick="showPanda()">Yes</button>
+  <button onclick="next(3)">No</button>
+</section>
+
+<section id="p3" class="page">
+  <h2>Need a Present?? 🎁</h2>
+  <p>⚠️ Don't try No AGAIN!</p>
+  <button onclick="showPanda()">Yes</button>
+  <button class="small" onclick="next(4)">No</button>
+</section>
+
+<section id="p4" class="page">
+  <h2>WANNA OPEN YOUR PRESENT 🎀</h2>
+  <p>No NO btw 🥰</p>
+  <button class="big" onclick="showPanda()">Yessssss 💖</button>
+</section>
+
+<section id="letter" class="page">
+<div class="card">
+<h2>💌 For Bhavaaa 💌</h2>
+<p id="type"></p>
+</div>
+</section>
+
+<div id="pandaModal" class="modal">
+<div class="modalbox">
+<img src="assets/panda.jpg">
+<h2>I'M YOUR GIFT!!! 💖</h2>
+<button onclick="openLetter()">Open My Letter 💌</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

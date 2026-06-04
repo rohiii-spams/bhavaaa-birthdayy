@@ -1,0 +1,24 @@
+
+body{
+margin:0;font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#e7c6ff,#ffc8dd);
+overflow:hidden;color:#fff;
+}
+.page{display:none;height:100vh;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:20px}
+.active{display:flex}
+button{padding:12px 25px;border:none;border-radius:30px;background:#ff6fb5;color:white;font-size:1.1rem;cursor:pointer;margin:10px}
+.small{font-size:.7rem;padding:6px 12px}
+.big{font-size:1.5rem;padding:18px 35px}
+.curve{font-size:2.2rem;max-width:320px}
+.tap{position:absolute;bottom:50px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);justify-content:center;align-items:center}
+.modalbox{background:white;color:#333;padding:20px;border-radius:25px;text-align:center;animation:bounce .6s}
+.modal img{width:220px;max-width:80%}
+.card{background:rgba(255,255,255,.2);backdrop-filter:blur(10px);padding:25px;border-radius:25px;max-width:600px}
+@keyframes bounce{0%{transform:scale(.3)}100%{transform:scale(1)}}
+.bubbles::before,.bubbles::after{
+content:'';position:absolute;width:200%;height:200%;
+background-image:radial-gradient(circle,rgba(255,255,255,.4) 2px,transparent 2px);
+background-size:60px 60px;animation:float 25s linear infinite;
+}
+@keyframes float{from{transform:translateY(0)}to{transform:translateY(-200px)}}
